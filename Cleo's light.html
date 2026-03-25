@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cleo's light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* Layout global */
+    main.lamp-page {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 0 40px;
+    }
+
+    /* Galerie */
+    .lamp-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 335px;
+      flex: 1;
+    }
+
+    .lamp-gallery img {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+      margin-left: -25px;
+      margin-top: -325px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .intro {
+        margin-left: -685px;
+        margin-top: 150px; 
+     }
+
+
+    /* Cartel sticky */
+    #Cartel {
+      position: sticky;
+      top: 200px;
+      max-width: -200px;
+    }
+
+    .lamp-title {
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+
+    /* Scrollbar (optionnel) */
+    .lamp-gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .lamp-gallery::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+
+
+  /* MOBILE */
+@media (max-width: 768px) {
+
+  .lamp-title {
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+
+  .intro {
+    margin-left: -40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  body.lamp-page-body {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  main.lamp-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lamp-gallery {
+    margin: 0;
+    transform: none;
+    margin-bottom: 20px;
+  }
+
+  .lamp-gallery img {
+    width: 130%;
+    margin-left: -40px;
+  }
+
+  #Cartel {
+    position: sticky;
+    top: 80px;
+    max-width: 130%;
+    width: 130%;
+    margin-left:-35px;	
+  }
+
+    }
+
+  </style>
+</head>
+
+<body class="lamp-page-body">
+
+<a href="index.html" class="contact-link">>Home</a>
+
+<header class="header">
+
+  <a href="index.html" class="back-link">
+    Back to the collection
+  </a>
+
+  <a href="index.html" class="back-link" style="margin-top:20px; display:inline-block;">
+    Back to the collection
+  </a>
+
+  <!-- TITRE -->
+  <h1 class="lamp-title">Cleo's light</h1>
+
+  <p class="intro">
+    Prix : 750 euros <br>
+    Materials : Aluminum, Acrylic. <strong>Available to order</strong>.<br>
+    Process : Casting, assembly and gluing. <br>
+    Dimensions : 220 mm x 220 x 550 mm.
+  </p>
+
+</header>
+
+<main class="lamp-page">
+
+  <!-- GALERIE -->
+  <section class="lamp-gallery">
+
+    <img src="images/Cleo's light1.jpg" alt="Cleo's light - vue 1">
+    <img src="images/Cleo's light3.jpg" alt="Cleo's light - vue 2">
+    <img src="images/Cleo's light2.jpg" alt="Cleo's light - vue 3">
+    <img src="images/Cleo's light4.jpg" alt="Cleo's light - vue 4">
+
+  </section>
+
+  <!-- CARTEL -->
+  <aside id="Cartel">
+
+The plastic crown of <strong>Cleo's light</strong> have a circular<br> 
+shape.It’s made of two light rings surrounding<br>
+the bulb, creating subtle variations between <br>
+polished, transparent, and frosted acrylic. <br>
+The piece is designed so that the light coming<br> 
+from its core is projected onto its square top, <br>
+creating an interesting lighting effect. As <br>
+for the base, it’s cast in aluminum and<br> 
+intentionally keepssome imperfections,treated <br>
+as unique features before being carefully <br>
+polished.<br>
+
+  </aside>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>L'igloo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* Galerie principale des lampes */
+    .lamp-gallery {
+      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+      overflow-x: auto;
+      justify-content: center;
+      margin: -700px 400px;
+      padding-bottom: 100px;
+    }
+   .lamp-title {
+        margin-top: -20px;
+	margin-left: -20px;
+      }
+
+
+    .lamp-gallery img {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .sold-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+    }
+
+    .history {
+      margin-top: 200px;
+    }
+
+    .history h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Scrollbar */
+    .lamp-gallery::-webkit-scrollbar,
+    .sold-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .lamp-gallery::-webkit-scrollbar-thumb,
+    .sold-grid::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .lamp-title {
+        margin-top: -40px;
+	margin-left: -20px;
+      }
+
+      body.lamp-page-body {
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      main.lamp-page {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lamp-gallery {
+        margin: 0;
+        transform: none;
+      }
+
+      #Cartel {
+        position: static;
+        top: 40px;
+        margin-bottom: -1450px;
+        margin-left: 5px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body class="lamp-page-body">
+
+<a href="index.html" class="contact-link">>Home</a>
+
+<header class="header">
+
+  <a href="index.html" class="back-link">
+    Back to the collection
+  </a>
+
+  <a href="index.html" class="back-link" style="margin-top:20px; display:inline-block;">
+    Back to the collection
+  </a>
+
+  <!-- ✅ TITRE -->
+  <h1 class="lamp-title">L'igloo</h1>
+
+  <p class="intro">
+    Prix : 620 euros <br>
+    Materials : Aluminum, Acrylic. <strong>Available to order</strong>.<br>
+    Process : Casting, assembly and gluing. <br>
+    Dimensions : 70 mm x 100 mm x 220 mm.
+  </p>
+
+</header>
+
+<aside id="Cartel">
+
+<!-- ✅ TEXTE -->
+<strong>L'igloo</strong> is a lamp with a base<br>
+composed of interconnected arms joined<br>
+by a cast-aluminum connector. The top <br>
+section is made from offcuts and small <br>
+pieces of PMMA plastic (plexiglas). <br>
+Each colored piece is polished on its <br>
+inner surface to better diffuse the <br>
+light. For me, the result feels closer <br>
+to a sculpture than a lamp. Each model <br>
+has its own unique colored “crown.” When <br>
+preparing these plastic pieces, I select <br>
+colors to create a palette with endless <br>
+variations, trying to bring out a rhythm <br>
+and a distinctive blend of tones, like <br>
+a painter blending colors and paint. The <br>
+form and surface of the light sculpture <br>
+are designed to visually “fade away”, <br>
+giving it an impression of weightlessness. <br>
+Its glow creates a soft layer of color, <br>
+gently shaping the atmosphere: a small, <br>
+luminous presence in the space. <br>
+
+</aside>
+
+<main class="lamp-page">
+
+  <section class="lamp-gallery">
+
+    <!-- ✅ TES IMAGES -->
+    <img src="images/L'igloo1.jpg" alt="L'igloo - vue 1">
+    <img src="images/L'igloo5.jpg" alt="L'igloo - vue 2">
+    <img src="images/L'igloo2.jpg" alt="L'igloo - vue 3">
+    <img src="images/L'igloo3.jpg" alt="L'igloo - vue 3">
+  </section>
+
+</main>
+
+</body>
+</html>

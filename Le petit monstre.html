@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Le petit monstre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* Galerie principale des lampes */
+    .lamp-gallery {
+      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+      overflow-x: auto;
+      justify-content: center;
+      margin: -500px 400px;
+      padding-bottom: 100px;
+    }
+
+    .lamp-gallery img {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .lamp-title {
+        margin-top: -20px;
+	margin-left: -20px;
+      }
+
+    .sold-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+    }
+
+    .history {
+      margin-top: 200px;
+    }
+
+    .history h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Scrollbar */
+    .lamp-gallery::-webkit-scrollbar,
+    .sold-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .lamp-gallery::-webkit-scrollbar-thumb,
+    .sold-grid::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .lamp-title {
+        margin-top: -40px;
+	margin-left: -20px;
+      }
+
+      body.lamp-page-body {
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      main.lamp-page {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lamp-gallery {
+        margin: 0;
+        transform: none;
+      }
+
+      #Cartel {
+        position: static;
+        top: 40px;
+        margin-bottom: -1250px;
+        margin-left: 5px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body class="lamp-page-body">
+
+<a href="index.html" class="contact-link">>Home</a>
+
+<header class="header">
+
+  <a href="index.html" class="back-link">
+    Back to the collection
+  </a>
+
+  <a href="index.html" class="back-link" style="margin-top:20px; display:inline-block;">
+    Back to the collection
+  </a>
+
+  <!-- ✅ TITRE -->
+  <h1 class="lamp-title">Le petit monstre</h1>
+
+  <p class="intro">
+    Prix : 750 euros <br>
+    Materials : Aluminum, Acrylic. <strong>Available to order</strong>.<br>
+    Process : Casting, assembly and gluing. <br>
+    Dimensions : 80 mm x 140mm x 80 mm.
+  </p>
+
+</header>
+
+<aside id="Cartel">
+
+<!-- ✅ TEXTE -->
+<strong>Le petit monstre</strong>is a light that follows my <br>
+scenographic project, made up of narrative <br>
+objects. It begins with a research into material<br>
+and reflection within the object itself.<br>
+The surface behaves like a strange skin <br>
+you can’t quite tell what material you’re <br>
+looking at anymore. That’s what interests me: <br>
+trying to blur the mental and material <br>
+perception. Its cast aluminum base <br>
+completes its “luminous accordion”…<br>
+
+</aside>
+
+<main class="lamp-page">
+
+  <section class="lamp-gallery">
+
+    <!-- ✅ TES IMAGES -->
+    <img src="images/Lepetitmonstre1.jpg" alt="Le petit monstre - vue 1">
+    <img src="images/Lepetitmonstre2.jpg" alt="Le petit monstre - vue 2">
+    <img src="images/Lepetitmonstre3.jpg" alt="Le petit monstre - vue 3">
+    <img src="images/Lepetitmonstre4.jpg" alt="Le petit monstre - vue 3">
+
+  </section>
+
+</main>
+
+</body>
+</html>

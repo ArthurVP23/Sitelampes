@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>PMAPxxSA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* Galerie principale des lampes */
+    .lamp-gallery {
+      gap: 50px;
+      align-items: center;
+      flex-direction: column;
+      overflow-x: auto;
+      justify-content: center;
+      margin: -450px 400px;
+      padding-bottom: 100px;
+
+    }   
+      .lamp-title {
+        margin-top: -20px;
+	margin-left: -20px;
+      }
+
+    .lamp-gallery img {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+
+    .sold-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;
+    }
+
+    .history {
+      margin-top: 200px;
+    }
+
+    .history h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Scrollbar */
+    .lamp-gallery::-webkit-scrollbar,
+    .sold-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .lamp-gallery::-webkit-scrollbar-thumb,
+    .sold-grid::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .lamp-title {
+        margin-top: -40px;
+	margin-left: -20px;
+      }
+
+      body.lamp-page-body {
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      main.lamp-page {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lamp-gallery {
+        margin: 0;
+        transform: none;
+      }
+
+      #Cartel {
+        position: static;
+        top: 40px;
+        margin-bottom: -1200px;
+        margin-left: 5px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body class="lamp-page-body">
+
+<a href="index.html" class="contact-link">>Home</a>
+
+<header class="header">
+
+  <a href="index.html" class="back-link">
+    Back to the collection
+  </a>
+
+  <a href="index.html" class="back-link" style="margin-top:20px; display:inline-block;">
+    Back to the collection
+  </a>
+
+  <!-- ✅ TITRE -->
+  <h1 class="lamp-title">PMAPxxSA</h1>
+
+  <p class="intro">
+    Prix : 650 euros <br>
+    Materials : Steel, Acrylic. <strong>Available to order</strong>.<br>
+    Process : Welding, assembly and gluing. <br>
+    Dimensions : 320 mm x 320 x 220 mm.
+  </p>
+
+</header>
+
+<aside id="Cartel">
+
+<!-- ✅ TEXTE MODIFIÉ -->
+<strong>PMAPxxSA</strong> is composed of light fins,<br>
+each time arranged in a different way, much like <br>
+a painter would do with watercolors, <br>
+varying compositions and tones. Its base, <br>
+this time, is made of steel. The plastic <br>
+material forming the crown is sandblasted <br>
+hence the “SA” in its name.<br>
+
+</aside>
+
+<main class="lamp-page">
+
+  <section class="lamp-gallery">
+
+    <!-- ✅ REMPLACE PAR TES IMAGES -->
+    <img src="images/PMAPxxSA.jpg" alt="PMAPxxSA - vue 1">
+    <img src="images/PMAPxxSA1.jpg" alt="PMAPxxSA - vue 2">
+    <img src="images/PMAPxxSA2.jpg" alt="PMAPxxSA - vue 3">
+
+  </section>
+
+</main>
+
+</body>
+</html>

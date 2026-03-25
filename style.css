@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f7f7f5;
+  color: #111;
+}
+
+.header {
+  padding: 0px 200px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+
+h1 {
+  font-weight: 750;
+  font-size: 100px;
+  margin-left: -50px;
+}
+
+.intro {
+  padding: 50px 200px 20px;
+  font-size: 18px;
+  color: #444;
+  margin:  0 -300px -80px;
+  transform: translateY(-50px);
+}
+
+
+.grid {
+  max-width: 1000px;
+  margin: -200px auto 80px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info h2 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 20px -476px -30px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  margin-top: 30px;
+}
+
+.back-link:hover {
+  opacity: 0.4;
+}
+
+.right-drawing img {
+  width: 1%;
+  right: -200px;
+  display: block;
+  
+}
+.right-drawing {
+  position: absolute;
+  top: 200px;
+  right: 390px;
+  width: 15vw;
+  max-height: 60vh;
+  z-index: 1;
+}
+
+
+.left-article {
+  position: absolute;
+  left: 20px;
+  top: 800px;
+}
+
+#Cartel {
+  position: sticky;
+  top: 450px;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.site-name {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+  z-index: 9999;
+  color: #111;
+  background: none;
+}
+
+.contact-link {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 750;
+  color: #111;
+  text-decoration: none;
+  z-index: 9999;
+  letter-spacing: 0.5px;
+}
+
+.contact-link:hover {
+  opacity: 0.5;
+}
+
+.contact-link + .contact-link {
+  display: block;
+  margin-top: 35px;
+}
+
+.contact-page {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 500px;
+}
+
+.contact-page p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.contact-page a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;}
+
+.contact-header {
+  display: flex;     
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;                          /*bloc centre*/
+  margin-bottom: -500px;
+  font-size: 16px;
+}
+.contact-image-side img {
+  width: 220px;
+  margin: -310px 320px 600px;	
+ 
+}
+
+.contact-timeline img {
+  width: 900px;                         
+  height: auto;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  transform: rotate(-90deg);
+  top: -780px; /* ajuste ici */
+
+}
+  
+  display: block;
+  margin: -100px -500px -130px;
+  border-radius: 10px;
+}
+
+.about {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+@media (min-width: 601px) {
+  .about-header h1 {              /* ici le titre about change que sur ordi */
+    margin-left: 50px;
+  }
+}
+
+.about-text {
+
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;   /* un peu plus d’espace sur mobile */
+  line-height: 1.7;
+  font-size: 0.95rem;
+  box-sizing: border-box; /* évite que le padding casse la largeur */
+  text-align: left;
+}
+
+
+.about-image-section {
+  display: flex;
+  justify-content: block;
+  margin-top: 30px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px; /* 👈 taille contrôlée */
+  height: auto;
+  border-radius: 10px;
+}
+
+}
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+/* RESPONSIVE SMARTPHONE */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 42px;
+    margin-left: 0px;
+  }
+
+  .header {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .intro {
+    padding: 20px;
+    margin: 0 -40px -50px;	
+    margin-bottom: 800px;
+    font-size: 14px;
+    transform: translateY(60px);
+  }
+@media (max-width: 768px) {
+  .home .intro {
+    margin-top: -40px; /* ajuste selon besoin */
+    margin-bottom:-200px;
+    font-size: 16px;
+  }
+   body.home .intro {
+   margin-bottom:-300px;
+   margin: 10px -20px -60px;
+}
+
+  .grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .grid .card:nth-child(2) {
+    margin-bottom: 600px; /* espace entre la 1ère et 2ème carte */
+  }
+}
+
+  .contact-link {
+    right: 20px;
+    font-size: 18px;
+  }
+ .contact {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+@media (max-width: 768px) {
+  .contact-title {
+    margin-top: -50px; /* ajuste selon le rendu */
+  }
+}
+
+  .contact-timeline img {
+    max-width: 80%;
+    margin-top: 150px;
+    transform: rotate(-90deg); /* tu peux garder ou enlever */
+  }
+  .contact-image-side {
+  position: relative;
+  left: -80px; /* déplace vers la gauche */
+  top: -60px;
+}
+
+  .about-image {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+
+ .right-drawing img {
+    position: absolute;
+    top: 10px;
+    right: -430px;
+    width: 280%;
+    margin: 0 auto 20px;
+    z-index: 1;
+    height: auto;
+    display: block;
+  }
+
+.left-article {
+  position: absolute;
+  left: 20px;
+  top: 1200px; /* position du left article  */
+}
+
+}
+.about-container{
+  max-width:1100px;
+  margin:80px auto;
+  padding:0 20px;
+  display:flex;
+  gap:60px;
+  align-items:flex-start;
+}
+
+.about-image img{
+  width:10%;
+  max-width:450px;
+  height:auto;
+  display:block;  
+  margin-top: 10;
+}
+
+
+  .about {
+    padding: 20px 15px;
+  }
+
+
+  .about-text {
+    max-width: 100%;      /* prend la largeur dispo */
+    padding: 0 10px;      /* marge intérieure sur les côtés */
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  .about-header {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .lamp-gallery {
+    transform: translateY(60px); /* descend la colonne */
+    
+  
